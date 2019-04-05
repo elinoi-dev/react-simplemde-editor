@@ -20,7 +20,7 @@
     "src"
   ],
   "dependencies": {
-    "easymde": "^2.5.1",
+    "easymde": "elinoi-dev/easy-markdown-editor#master",
     "@types/codemirror": "^0.0.65"
   },
   "peerDependencies": {

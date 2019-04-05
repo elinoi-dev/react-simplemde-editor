@@ -107,7 +107,8 @@ export default class SimpleMDEEditor extends React.PureComponent<
     const SimpleMDE = require("easymde");
     const initialOptions = {
       element: document.getElementById(this.id),
-      initialValue: this.props.value
+      initialValue: this.props.value,
+      label: this.props.label,
     };
 
     const allOptions = Object.assign({}, initialOptions, this.props.options);
@@ -198,7 +199,6 @@ export default class SimpleMDEEditor extends React.PureComponent<
     } = this.props;
     return (
       <div id={`${this.id}-wrapper`} {...rest} ref={this.setElementWrapperRef}>
-        {label && <label htmlFor={this.id}> {label} </label>}
         <textarea id={this.id} />
       </div>
     );
